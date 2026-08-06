@@ -1,16 +1,15 @@
 // App.js
 import React from "react";
-import blog from "./blog";
-import Header from "./Header";
+import blog from "../components/blog";
+import Header from "../../Header";
 import About from "./About";
-import ArticleList from "./ArticleList";
+import ArticleList from "../components/ArticleList";
 import Article from "../components/Article";
 
 
 function App() {
-  
   return (
-    <div className="App">
+    <div>
       <Header name={blog.name}  />
       <About image={blog.image} about={blog.about} />
       <ArticleList posts={blog.post} />
